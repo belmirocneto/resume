@@ -6,17 +6,18 @@ on:
       - "main"
     paths:
       - "RESUME.md"
+      - "RESUME_EN.md"
   workflow_dispatch:
 
 jobs:
   convert-md-to-pdf:
-    runs-on: ubuntu-latest  # Use the latest stable Ubuntu runner
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
-          persist-credentials: true  # Ensure authentication for pushing
+          persist-credentials: true
 
       - name: Install Node.js, Chromium, and Dependencies
         run: |
@@ -34,13 +35,21 @@ jobs:
           echo "PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser" >> $GITHUB_ENV
           echo "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true" >> $GITHUB_ENV
 
-      - name: Convert Markdown to PDF using md-to-pdf
-        run: md-to-pdf RESUME.md
-
-      - name: Move generated PDF to the pdf/ folder
+      - name: Convert Markdown files to PDF using md-to-pdf
         run: |
           mkdir -p pdf
-          mv RESUME.pdf pdf/RESUME-${{ env.DATE }}.pdf
+          
+          # Process Portuguese Resume
+          if [ -f "RESUME.md" ]; then
+            md-to-pdf RESUME.md
+            mv RESUME.pdf pdf/RESUME-${{ env.DATE }}.pdf
+          fi
+
+          # Process English Resume
+          if [ -f "RESUME_EN.md" ]; then
+            md-to-pdf RESUME_EN.md
+            mv RESUME_EN.pdf pdf/RESUME_EN-${{ env.DATE }}.pdf
+          fi
 
       - name: Configure Git
         run: |
@@ -51,8 +60,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git add pdf/RESUME-${{ env.DATE }}.pdf
-          git commit -m "Automated update: Convert RESUME.md to pdf/RESUME-${{ env.DATE }}.pdf [skip ci]" || exit 0
+          git add pdf/
+          git commit -m "Automated update: Convert RESUME files to pdf/ [skip ci]" || exit 0
           git push origin HEAD:main
 
       - name: Install mailsend-go (if Gmail credentials exist)
@@ -69,24 +78,32 @@ jobs:
             echo "Skipping mailsend-go installation: No Gmail credentials found."
           fi
 
-      - name: Send Email with PDF Attachment (if Gmail credentials exist)
+      - name: Send Email with PDF Attachments (if Gmail credentials exist)
         env:
           GMAIL_USERNAME: ${{ secrets.GMAIL_USERNAME }}
           GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
         run: |
           if [[ -n "$GMAIL_USERNAME" && -n "$GMAIL_PASSWORD" ]]; then
-            echo "Sending email with resume PDF..."
+            echo "Sending email with resume PDFs..."
+            
+            ATTACH_ARGS=""
+            if [ -f "pdf/RESUME-${{ env.DATE }}.pdf" ]; then
+              ATTACH_ARGS="$ATTACH_ARGS attach -file pdf/RESUME-${{ env.DATE }}.pdf"
+            fi
+            if [ -f "pdf/RESUME_EN-${{ env.DATE }}.pdf" ]; then
+              ATTACH_ARGS="$ATTACH_ARGS attach -file pdf/RESUME_EN-${{ env.DATE }}.pdf"
+            fi
+
             mailsend-go -smtp smtp.gmail.com -port 587 \
-              -sub "Updated Resume - ${{ env.DATE }}" \
+              -sub "Updated Resumes (PT-BR & EN) - ${{ env.DATE }}" \
               auth \
                 -user "$GMAIL_USERNAME" \
                 -pass "$GMAIL_PASSWORD" \
                 -from "$GMAIL_USERNAME" \
                 -to "$GMAIL_USERNAME" \
               body \
-                -msg "Attached is your latest resume in PDF format, generated automatically." \
-              attach \
-                -file "pdf/RESUME-${{ env.DATE }}.pdf"
+                -msg "Attached are your latest resumes in PDF format (PT-BR & EN), generated automatically." \
+              $ATTACH_ARGS
           else
             echo "Skipping email: No Gmail credentials found."
           fi

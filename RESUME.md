@@ -1,138 +1,82 @@
-# Luis Machado Reis
+# Belmiro Christo Neto
 
-**Location:** Balneário Piçarras, Santa Catarina, Brazil  
-**Phone:** +55 (34) 99889-5371  
-**Email:** luis.reis@singularideas.com.br  
-**LinkedIn:** [linkedin.com/in/luismachadoreis](https://linkedin.com/in/luismachadoreis)  
-**GitHub:** [github.com/luismr](https://github.com/luismr)  
-**Website:** [luismachadoreis.dev](https://luismachadoreis.dev)  
+Vila Velha, Espírito Santo, Brasil | belmiro.neto@live.com.br
+LinkedIn: linkedin.com/in/belmiro-neto | GitHub: github.com/belmirocneto
 
-## Professional Summary
+---
 
-Experienced Software Architect and Engineering Leader with over 20 years of hands-on experience designing, modernizing, and scaling high-performance, resilient systems. Proven track record in fintech, SaaS, telecom, and e-commerce, with deep expertise in cloud-native solutions (AWS, GCP), microservices, DevOps, and full-stack delivery using Java, TypeScript, React, and modern frameworks. Skilled in leading global teams, implementing CI/CD pipelines, architecting enterprise integrations (billing, CRM, provisioning), and aligning architecture with business impact. Passionate about leveraging AI coding tools (Cursor, Claude, OpenAI) and developing agent-based solutions to accelerate engineering productivity and delivery pace.
+## RESUMO PROFISSIONAL
 
-## Core Competencies
+Engenheiro DevOps com mais de 10 anos de experiência em Infraestrutura em Nuvem e Data Centers On-Premises. Especialista em práticas de GitOps, Infraestrutura como Código (IaC) e automação de pipelines de CI/CD para garantir entregas de software mais rápidas, seguras e resilientes.
 
-- Software Architecture & Modernization  
-- Backend & Full-Stack Engineering (Java, Spring Boot, Python, .NET, React, Angular, Vue)  
-- Cloud Computing (AWS, GCP), Kubernetes, Docker  
-- CI/CD & DevOps (GitHub Actions, Jenkins, Bamboo, Terraform, Ansible)  
-- TypeScript & Frontend Development (React, Vue, Angular)  
-- AI-Augmented Development (Cursor, Claude, OpenAI) & Agent-Based Workflows  
-- Enterprise Integration Architecture (APIs, ERP-Adjacent Flows, Data Pipelines)  
-- E-Commerce Platform Development & Modernization  
-- Microservices & Event-Driven Systems (RabbitMQ, Kafka)  
-- Scalable, Secure Systems Design (OAuth2, OpenID, JWT, PCI DSS)  
-- Technical Leadership & Team Mentorship  
-- Performance Optimization & Observability  
-- Agile Development, Remote Team Collaboration
+Atualmente gerencio ambientes em nuvem pública utilizando Terraform/OpenTofu, ArgoCD e pipelines baseadas em Git para assegurar rastreabilidade, alta performance e segurança. Tenho experiência na liderança de migrações complexas de CI/CD (ex: Bamboo para GitHub Actions) e na criação de ferramentas internas de automação e plataforma utilizando Python.
 
-## Professional Experience
+---
 
-### **Sears Home Services** – Senior Software Engineering Manager  
-**Jul 2025 – now | Chicago, USA**  
+## PRINCIPAIS COMPETÊNCIAS
 
-#### **Service Order Management** – Software Architect
-- Create, Update, Reschedule, Cancel, Lookup service orders
-- Authorizer Service: Client ID and bearer token management
-- Provide closer architecture support for Business/Product areas
-- Provide closer support for SHI (Sears Holding India) Engineers
+* **Cloud & DevOps:** AWS, Azure, Terraform, OpenTofu, ArgoCD, GitOps, Docker, Kubernetes, Pipelines CI/CD, GitHub Actions, Bamboo, Spinnaker, GitLab CI, Helm
+* **Desenvolvimento & Automação:** Python (Ferramentas Internas e Engenharia de Plataforma), Bash Scripting
+* **Containers & Plataformas:** Red Hat OpenShift, VMware vSphere, Sonatype Nexus
+* **Infraestrutura & Middleware:** Linux (RHEL, Ubuntu), JBoss EAP, Apache Kafka, Redis, Administração de Sistemas
+* **Bancos de Dados:** Oracle Database, Microsoft SQL Server
 
-#### **SHSAI** – Software Engineering Manager
-- AI innovation engine for Sears Home Services, focused on:
-- Agent Development & Orchestration
-- Machine Learning & NLP Solutions
-- AI-Powered Tooling for Technicians
-- Conversational AI (Chat Assistants, Voice AI)
-- Intelligent Routing & Scheduling
+---
 
-### **Trustly** – Head of Software Architecture  
-**Sep 2022 – Feb 2025 | Vitória, Brazil**  
-- Led cloud-native architecture of real-time payment platform (Java, AWS, Spring Boot)  
-- Defined integration architecture connecting payment platform with downstream banking and upstream merchant systems via APIs and event-driven messaging  
-- Designed microservices, CI/CD (GitHub Actions, Bamboo), and automated infrastructure  
-- Achieved 99.99% uptime during high-traffic events like the Super Bowl  
-- Reduced transaction latency by 40% and improved overall reliability  
+## EXPERIÊNCIA PROFISSIONAL
 
-### **Aurea Software** – Product Chief Architect  
-**Sep 2015 – Aug 2022 | Austin, TX (Remote)**  
-- Modernized enterprise SaaS products including Lyris, Prysm, FogBugz, DevFactory  
-- Migrated systems to AWS, introduced Docker/ECS and infrastructure-as-code  
-- Led frontend modernization with React, TypeScript, and component architecture  
-- Delivered DevOps pipelines (Jenkins, GitHub Actions) and code quality automation  
+### **Trustly** – Engenheiro DevOps
+**Jul de 2023 – Presente | Vitória, Espírito Santo, Brasil (Remoto/Presencial)**
 
-### **SingularIdeas** – Senior Software Specialist  
-**Apr 2005 – Sep 2022 | Uberlândia, Brazil**  
-- Designed scalable SaaS applications using Java, React, and cloud services  
-- Built full-stack apps with responsive UIs in Angular, Vue, and React  
-- Developed backend APIs, CI/CD pipelines, and cloud-native automation  
+- Gestão de operações de infraestrutura em nuvem pública com foco em confiabilidade, alta disponibilidade e performance.
+- Implementação de fluxos de GitOps utilizando Terraform/OpenTofu, ArgoCD e Git para garantir deploys automatizados e rastreáveis.
+- Liderança no projeto de migração de pipelines de CI/CD do Bamboo para GitHub Actions, mantendo e otimizando fluxos no Spinnaker.
+- Desenvolvimento de ferramentas CLI e automações internas em Python para simplificar e padronizar rotinas de infraestrutura.
 
-### **LigFlat Telecom** – Founder & Software Architect  
-**Aug 2013 – Dec 2019 | Uberlândia, Brazil**  
-- Developed complete OSS/BSS platform, integrating VoIP, billing, and CRM  
-- Architected end-to-end enterprise integration flows connecting billing, CRM, and provisioning systems — ERP-adjacent patterns with APIs, event-driven messaging, and automated data pipelines  
-- Architected systems using Java, MySQL, and telecom protocols (SMPP, SIP)  
-- Automated network provisioning with Ansible and deployed via Bamboo  
+### **Grupo Águia Branca** – 9 anos e 10 meses (Total)
+*Cariacica, Espírito Santo, Brasil*
 
-### **Algar Telecom** – QA Engineering Manager  
-**Jul 2008 – Dec 2012 | Uberlândia, Brazil**  
-- Managed software quality, QA processes, and platform optimization  
-- Delivered stable portals and e-commerce platforms (.NET, Oracle), including product catalog, checkout, and order management flows  
-- E-commerce domain expertise in telecom retail, readily transferable to modern platforms such as Shopify and Shopify Plus  
+#### **Supervisor de Infraestrutura (Produção e Operações)** | *Jan de 2022 – Jul de 2023*
+- Liderança das operações de infraestrutura de sistemas críticos, mantendo a disponibilidade acima de 99,9% para mais de 200 aplicações produtivas.
+- Gestão na implantação do Red Hat OpenShift e no gerenciamento do ambiente de aplicações containerizadas.
+- Administração de ferramentas de plataforma e suporte ao desenvolvimento, como GitLab (repositórios e CI/CD) e Sonatype Nexus (gestão de artefatos).
+- Gestão de ambientes de alta disponibilidade com JBoss EAP, Kafka, Redis, bancos Oracle e SQL Server.
 
-## Education
+#### **Analista de Infraestrutura (Produção)** | *Fev de 2018 – Jan de 2022*
+- Garantia de alta disponibilidade e performance para mais de 200 aplicações produtivas, com foco nos sistemas críticos de venda de passagens.
+- Administração de plataformas de middleware (JBoss EAP, Kafka, Redis) e gestão de bancos de dados SQL Server e Oracle.
+- Atuação e participação técnica em projetos de integração de soluções e APIs corporativas.
 
-**Bachelor of Computer Science**  
-Universidade da Região da Campanha (1997–2000)
+#### **Analista de Suporte a Infraestrutura** | *Set de 2016 – Fev de 2018*
+- Sustentação e manutenção de serviços core de TI, incluindo ambientes Exchange, Windows Server, VMware vSphere, ADDS, DNS e DHCP.
+- Resolução de incidentes em File Servers, Remote Desktop Apps e ambientes Citrix XenApp.
 
-## Certifications
+#### **Técnico de Laboratório de Informática** | *Out de 2013 – Set de 2016*
+- Atendimento e suporte técnico direto a usuários, mantendo estações de trabalho, hardware e dispositivos móveis sempre operacionais.
 
-- **SCEA – Sun Certified Enterprise Architect**  
-- **SCJP 6 – Sun Certified Java Programmer**  
-- **EF SET C2 Proficient – English Certification**  
-- **IBM AIX Administrator / User**  
-- **Conectiva Linux Administrator I & II**
+---
 
-## Languages
+## FORMAÇÃO ACADÊMICA
 
-- Portuguese: Native  
-- English: Fluent (C2 – Proficient)
+* **MBA em Cloud Computing & DevOps** – Impacta Tecnologia (2021 – 2023)
+* **Bacharelado em Ciência da Computação** – FAESA (2013 – 2017)
+* **Técnico em Automação Industrial** – Senai Vitória (2010 – 2012)
 
-## Projects & Portfolio
+---
 
-*Public repos and code samples — company codebases from past employers are in private repositories.*
+## CERTIFICAÇÕES DE DESTAQUE
 
-- **[Real-Time Flight Tracker](https://github.com/luismr/realtime-flight-tracker)**  
-  *Java, Python, TypeScript, React, Kafka*  
-  Scalable architecture to process and visualize live flight events in real-time.
+* **GitHub Actions** – GitHub
+* **AWS Certified Cloud Practitioner** – Amazon Web Services
+* **Descomplicando Docker** – LINUXtips
+* **Mutirão DevOps / GitOps** – LINUXtips
+* **Claude Academy (AI Fluency & Tooling)** – Anthropic
+* **Administering / Provisioning SQL Server Databases** – Microsoft
+* **ITIL Foundation em Gestão de Serviços de TI**
 
-- **[Flight Tracker App](https://github.com/luismr/flight-tracker-event-app)**  
-  *React, TypeScript*  
-  Interactive frontend interface for flight event visualization.
+---
 
-- **[Heimdall Realm](https://github.com/luismr/heimdall)**  
-  *TypeScript, Express, Serverless, JWT*  
-  Secure access control service built on a serverless stack with JWT authentication.
+## IDIOMAS
 
-- **[Blueprint Prompts MCP Server](https://github.com/luismr/blueprint-prompts)**  
-  *TypeScript, Node.js, Claude API, Cursor Integration*  
-  Blueprint-based prompt management server to support AI workflows using Claude and Cursor.
-
-- **[Homelabs](https://github.com/luismr/homelabs)**  
-  *Vagrant, Kubernetes, Terraform, Grafana, Loki, Promtail, Cloudflare Tunnel*  
-  Infrastructure project to explore how to use a homelab in-house, exposing services using Cloudflare Tunnel.
-
-- **[Pudim Score Calculator](https://github.com/luismr/pudim-dev-calculator)** | [Live Demo](https://pudim.dev)  
-  *React, TypeScript, Node.js, shadcn/ui*  
-  A personal, lightweight (and good-humored) Next.js project that demonstrates how to build a service consuming the GitHub API, ranking developers with dessert-themed titles—just for fun! The live demo is always running in my homelab (yes, that's alive).
-
-## Tools & Technologies
-
-**Languages & Frameworks:** Java, Spring Boot, .NET, Python, JavaScript, TypeScript, React, Vue, Angular  
-**Cloud & DevOps:** AWS, GCP, Kubernetes, Docker, Terraform, Ansible, Jenkins, Bamboo, GitHub Actions  
-**Architecture:** Microservices, Modular Monolith, Serverless, Event-Driven  
-**Databases:** PostgreSQL, MySQL, SQL Server, Oracle  
-**Messaging & Integration:** Kafka, RabbitMQ, ActiveMQ, SQS  
-**Security:** OAuth2, OpenID, JWT, PCI DSS  
-**Monitoring:** Prometheus, Grafana, AWS CloudWatch  
-**AI & Productivity:** Cursor, Claude (Anthropic), OpenAI, GitHub Copilot
+* **Português:** Nativo
+* **Inglês:** Proficiência Profissional (Leitura e Comunicação Técnica)
