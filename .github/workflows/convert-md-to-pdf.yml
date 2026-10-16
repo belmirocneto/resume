@@ -9,6 +9,9 @@ on:
       - "RESUME_EN.md"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   convert-md-to-pdf:
     runs-on: ubuntu-latest
